@@ -1,8 +1,0 @@
-\BOOKMARK [1][-]{section.1}{下载 Miniconda3}{}% 1
-\BOOKMARK [1][-]{section.2}{安装 Miniconda 3}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{静默安装 Miniconda 3}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{设置python软件包更新源的镜像}{}% 4
-\BOOKMARK [1][-]{section.4}{设置Anaconda的源}{}% 5
-\BOOKMARK [2][-]{subsection.4.1}{如何删除添加的源呢？}{section.4}% 6
-\BOOKMARK [1][-]{section.5}{更新pip}{}% 7
-\BOOKMARK [1][-]{section.6}{安装分析wireshark数据包文件所需的工具库}{}% 8

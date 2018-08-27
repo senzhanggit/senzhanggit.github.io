@@ -1,75 +1,253 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="贵州理工学院 大数据学院 张森" />
-  <title>在Windows上安装miniconda</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+<!-- 2018-08-27 Mon 13:03 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>在Windows上安装miniconda</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="贵州理工学院 大数据学院 张森">
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-<header>
+<div id="content">
 <h1 class="title">在Windows上安装miniconda</h1>
-<p class="author">贵州理工学院 大数据学院 张森</p>
-</header>
-<p>Miniconda 是 Anaconda 的精简发行版。Anaconda本身分为 Anaconda 2 和 Anaconda 3 系列，分别提供对 python 2.x 语言 和 python 3.x 语言的支持。 本门课使用 Anaconda 3（Miniconda 3）以及相关的工具库进行网络数据包分析 工具。</p>
-<h1 id="下载-miniconda3">下载 Miniconda3</h1>
-<p>从 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/" class="uri">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/</a> 下载 Miniconda3 。依据你的操作系统是64位还是32位的Windows，下载对应的版本。 如果操作系统是64位的Windows，下载 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe" class="uri">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe</a>； 如果操作系统是32位的Windows，下载 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86.exe" class="uri">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86.exe</a>。</p>
-<p>下面的命令会以在64位Windows上安装 <code>Miniconda3-latest-Windows-x86_64.exe</code> 为例。在32位的情况下，请对命令 里的参数作相应替换。</p>
-<p>当然，也可以选择安装完整版的Anaconda3。完整版的Anaconda3从 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" class="uri">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a> 下载。相应地， 需要替换后续命令里的部分参数。</p>
-<h1 id="安装-miniconda-3">安装 Miniconda 3</h1>
-<p>当然，可以双击 <code>Miniconda3-latest-Windows-x86_64.exe</code> 直接安装，所有 配置选项采用默认设置。也可以用下面的方法安装。</p>
-<h2 id="静默安装-miniconda-3">静默安装 Miniconda 3</h2>
-<p>把下列命令复制到记事本（或者你钟爱的编辑器）里，另存为 <code>Miniconda3-latest-Windows-x86_64.exe</code> 所在的目录里的 <code>install_miniconda3.bat</code> 文件。</p>
-<pre class="shell"><code>start /wait &quot;&quot; Miniconda3-latest-Windows-x86_64.exe ^
+<div id="table-of-contents">
+<h2>&#30446;&#24405;</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org93eee67">1. 下载 Miniconda3</a></li>
+<li><a href="#orgfe4c292">2. 安装 Miniconda 3</a>
+<ul>
+<li><a href="#orga88f397">2.1. 静默安装  Miniconda 3</a></li>
+</ul>
+</li>
+<li><a href="#org8d341c5">3. 设置python软件包更新源的镜像</a></li>
+<li><a href="#orgbc74412">4. 设置Anaconda的源</a>
+<ul>
+<li><a href="#orgff3b0ec">4.1. 如何删除添加的源呢？</a></li>
+</ul>
+</li>
+<li><a href="#orgd7fdc95">5. 更新pip</a></li>
+<li><a href="#org360ca01">6. 安装分析wireshark数据包文件所需的工具库</a></li>
+</ul>
+</div>
+</div>
+<p>
+Miniconda 是 Anaconda 的精简发行版。Anaconda本身分为 Anaconda 2 和Anaconda 3 系列，分别提供对 python 2.x 语言 和 python 3.x 语言的支持。本门课使用 Anaconda 3（Miniconda 3）以及相关的工具库进行网络数据包分析工具。</p>
+
+<div id="outline-container-org93eee67" class="outline-2">
+<h2 id="org93eee67"><span class="section-number-2">1</span> 下载 Miniconda3</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+从 <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/</a> 下载Miniconda3 。依据你的操作系统是64位还是32位的Windows，下载对应的版本。如果操作系统是64位的Windows，下载<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86_64.exe</a>；如果操作系统是32位的Windows，下载<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86.exe">https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Windows-x86.exe</a>。</p>
+
+<p>
+下面的命令会以在64位Windows上安装<code>Miniconda3-latest-Windows-x86_64.exe</code> 为例。在32位的情况下，请对命令里的参数作相应替换。</p>
+
+<p>
+当然，也可以选择安装完整版的Anaconda3。完整版的Anaconda3从<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a> 下载。相应地，需要替换后续命令里的部分参数。</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe4c292" class="outline-2">
+<h2 id="orgfe4c292"><span class="section-number-2">2</span> 安装 Miniconda 3</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+当然，可以双击 <code>Miniconda3-latest-Windows-x86_64.exe</code> 直接安装，所有配置选项采用默认设置。也可以用下面的方法安装。</p>
+</div>
+
+<div id="outline-container-orga88f397" class="outline-3">
+<h3 id="orga88f397"><span class="section-number-3">2.1</span> 静默安装  Miniconda 3</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+把下列命令复制到记事本（或者你钟爱的编辑器）里，另存为<code>Miniconda3-latest-Windows-x86_64.exe</code> 所在的目录里的<code>install_miniconda3.bat</code> 文件。</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">start /wait <span style="color: #ffa500;">""</span> Miniconda3-latest-Windows-x86_64.exe ^
 /InstallationType=JustMe ^
 /RegisterPython=0 /S ^
 /D=%UserProfile%\Miniconda3
-</code></pre>
-<p>然后双击 <code>install_miniconda3.bat</code> ，等待执行完成，Miniconda3 会被安装在 <code>%UserProfile%\Miniconda3</code> （默认情况下，会在 <code>C:\Users\&lt;你的用户名&gt;\Miniconda3</code> ）目录里。</p>
-<h1 id="设置python软件包更新源的镜像">设置python软件包更新源的镜像</h1>
-<p>用文本编辑器（比如notepad）编辑 %APPDATA%.ini 文件，在里面顶 格输入下面三行配置并保存（请务必注意配置文件的后缀名，必须是.ini，不 能是.ini.txt或者.txt）：</p>
-<pre class="shell"><code>[global]
+</pre>
+</div>
+
+<p>
+然后双击 <code>install_miniconda3.bat</code> ，等待执行完成，Miniconda3 会被安装在<code>%UserProfile%\Miniconda3</code> （默认情况下，会在 <code>C:\Users\&lt;你的用户名&gt;\Miniconda3</code> ）目录里。</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8d341c5" class="outline-2">
+<h2 id="org8d341c5"><span class="section-number-2">3</span> 设置python软件包更新源的镜像</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+用文本编辑器（比如notepad）编辑 %APPDATA%\pip\pip.ini 文件，在里面顶格输入下面三行配置并保存（请务必注意配置文件的后缀名，必须是.ini，不能是.ini.txt或者.txt）：</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">[global]
 trusted-host=pypi.tuna.tsinghua.edu.cn
 index-url=https://pypi.tuna.tsinghua.edu.cn/simple
-</code></pre>
-<p>采用国内的python软件包更新源镜像，通常会提升软件包的下载速率。</p>
-<h1 id="设置anaconda的源">设置Anaconda的源</h1>
-<p>同样地，也是为了后续使用conda命令时能够比较快地下载软件包，在开始菜 单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的cmd命令 行窗口里输入下列命令并回车：</p>
-<pre class="shell"><code>conda config --add channels &#39;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/&#39;
+</pre>
+</div>
+
+<p>
+采用国内的python软件包更新源镜像，通常会提升软件包的下载速率。</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc74412" class="outline-2">
+<h2 id="orgbc74412"><span class="section-number-2">4</span> 设置Anaconda的源</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+同样地，也是为了后续使用conda命令时能够比较快地下载软件包，在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的cmd命令行窗口里输入下列命令并回车：</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">conda config --add channels <span style="color: #ffa500;">'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'</span>
 conda config --set show_channel_urls yes
-# 看看当前的 config 是什么样的
+<span style="color: #ffd700;"># </span><span style="color: #ffd700;">&#30475;&#30475;&#24403;&#21069;&#30340; config &#26159;&#20160;&#20040;&#26679;&#30340;</span>
 conda config --show  
-</code></pre>
-<p>好了，这样可以开心的下载东西了。</p>
-<h2 id="如何删除添加的源呢">如何删除添加的源呢？</h2>
-<p>这一步Just for your information，目前没有必要执行。</p>
-<pre class="shell"><code>conda config --remove channels &#39;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/&#39; 
-</code></pre>
-<h1 id="更新pip">更新pip</h1>
-<p>在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的 cmd命令行窗口里输入下列命令并回车：</p>
-<pre class="shell"><code>python -m pip install -U pip
-</code></pre>
-<figure>
-<img src="./images/chap0/update_pip.png" title=" update_pip" alt="更新pip" /><figcaption>更新pip</figcaption>
-</figure>
-<p>注意看cmd命令行窗口是否输出了红色和黄色的错误和警告信息。如果有，则 表明用pip安装/更新软件包出错（下同）。</p>
-<h1 id="安装分析wireshark数据包文件所需的工具库">安装分析wireshark数据包文件所需的工具库</h1>
-<p>在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的 cmd命令行窗口里输入下列命令并回车：</p>
-<pre class="shell"><code>pip install pyshark spyder jupyter
-</code></pre>
-<p>不出意外的话会看到：</p>
-<figure>
-<img src="./images/chap0/install_pyshark_spyder_jupyter.png" title="install_tools_for_wireshark_packet_file" alt="安装分析wireshark数据包文件所需工具库" /><figcaption>安装分析wireshark数据包文件所需工具库</figcaption>
-</figure>
+</pre>
+</div>
+
+<p>
+好了，这样可以开心的下载东西了。</p>
+</div>
+
+<div id="outline-container-orgff3b0ec" class="outline-3">
+<h3 id="orgff3b0ec"><span class="section-number-3">4.1</span> 如何删除添加的源呢？</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+这一步Just for your information，目前没有必要执行。</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">conda config --remove channels <span style="color: #ffa500;">'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/'</span> 
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd7fdc95" class="outline-2">
+<h2 id="orgd7fdc95"><span class="section-number-2">5</span> 更新pip</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的cmd命令行窗口里输入下列命令并回车：</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">python -m pip install -U pip
+</pre>
+</div>
+
+
+<div id="orge0e014d" class="figure">
+<p><img src="./images/chap0/update_pip.png" alt="update_pip.png">
+</p>
+<p><span class="figure-number">&#22270;1&nbsp; </span>更新pip</p>
+</div>
+
+<p>
+注意看cmd命令行窗口是否输出了红色和黄色的错误和警告信息。如果有，则表明用pip安装/更新软件包出错（下同）。</p>
+</div>
+</div>
+
+<div id="outline-container-org360ca01" class="outline-2">
+<h2 id="org360ca01"><span class="section-number-2">6</span> 安装分析wireshark数据包文件所需的工具库</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的cmd命令行窗口里输入下列命令并回车：</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">pip install pyshark spyder jupyter
+</pre>
+</div>
+
+<p>
+不出意外的话会看到：</p>
+
+
+<div id="orgddc9509" class="figure">
+<p><img src="./images/chap0/install_pyshark_spyder_jupyter.png" alt="install_pyshark_spyder_jupyter.png">
+</p>
+<p><span class="figure-number">&#22270;2&nbsp; </span>安装分析wireshark数据包文件所需工具库</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div>版权所有 (c) 2018 (贵州理工学院 大数据学院 张森)</div><div>电子邮件: 20120061 # git dot edu dot cn</div><div>更新时间: 2018-08-27</div>
+</div>
 </body>
 </html>
