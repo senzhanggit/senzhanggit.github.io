@@ -1,3 +1,7 @@
-#+TITLE: 2018年秋季学期 计算机网络
+#+SETUPFILE: setup/theme-readtheorg-local.setup
+#+TITLE: 2018年秋季学期 计算机网络 课程网站 实验资料
+#+AUTHOR: 贵州理工学院 大数据学院 张森
+#+EMAIL: 20120061 # git dot edu dot cn
+#+LANGUAGE: zh-CN
 
 - [[file:exp1_install_conda3.org][在Windows上安装miniconda]]
