@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}下载 Miniconda3}{1}{section.1}
+\contentsline {section}{\numberline {2}安装 Miniconda 3}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}静默安装 Miniconda 3}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}设置python软件包更新源的镜像}{2}{section.3}
+\contentsline {section}{\numberline {4}设置Anaconda的源}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}如何删除添加的源呢？}{2}{subsection.4.1}
+\contentsline {section}{\numberline {5}更新pip}{3}{section.5}
+\contentsline {section}{\numberline {6}安装分析wireshark数据包文件所需的工具库}{3}{section.6}
