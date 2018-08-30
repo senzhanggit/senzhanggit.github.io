@@ -102,11 +102,12 @@ index-url=https://pypi.tuna.tsinghua.edu.cn/simple
 
 * 安装分析wireshark数据包文件所需的工具库
 
+** 安装spyder和jupyter
   在开始菜单里找到 =Anaconda3= ，点击 =Anaconda Prompt= ，然后在出来的
   cmd命令行窗口里输入下列命令并回车：
 
   #+BEGIN_SRC shell
-    pip install pyshark spyder jupyter
+    pip install spyder jupyter
   #+END_SRC
 
   不出意外的话会看到：
@@ -115,3 +116,7 @@ index-url=https://pypi.tuna.tsinghua.edu.cn/simple
   #+NAME: fig:install_tools_for_wireshark_packet_file
   [[./images/chap0/install_pyshark_spyder_jupyter.png]]
 
+
+** 从github安装pyshark
+
+   参看[[https://docs.qq.com/doc/BBl3iP0LW0yM0O5N9V4N0AFj0IXh411RunKS3v2QxQ2noYKK0KzroD4yU9IH1ApZHP4WXddb2][这篇教程]]。

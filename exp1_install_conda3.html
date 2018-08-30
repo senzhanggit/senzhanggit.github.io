@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<!-- 2018-08-27 Mon 13:50 -->
+<!-- 2018-08-30 Thu 10:45 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>在Windows上安装miniconda</title>
@@ -102,7 +102,12 @@ for the JavaScript code in this tag.
 </ul>
 </li>
 <li><a href="#orgd7fdc95">5. 更新pip</a></li>
-<li><a href="#org360ca01">6. 安装分析wireshark数据包文件所需的工具库</a></li>
+<li><a href="#org360ca01">6. 安装分析wireshark数据包文件所需的工具库</a>
+<ul>
+<li><a href="#orge9d69c0">6.1. 安装spyder和jupyter</a></li>
+<li><a href="#orgc0a5ce8">6.2. 从github安装pyshark</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -226,11 +231,15 @@ conda config --show
 <div id="outline-container-org360ca01" class="outline-2">
 <h2 id="org360ca01"><span class="section-number-2">6</span> 安装分析wireshark数据包文件所需的工具库</h2>
 <div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orge9d69c0" class="outline-3">
+<h3 id="orge9d69c0"><span class="section-number-3">6.1</span> 安装spyder和jupyter</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 在开始菜单里找到 <code>Anaconda3</code> ，点击 <code>Anaconda Prompt</code> ，然后在出来的cmd命令行窗口里输入下列命令并回车：</p>
 
 <div class="org-src-container">
-<pre class="src src-shell">pip install pyshark spyder jupyter
+<pre class="src src-shell">pip install spyder jupyter
 </pre>
 </div>
 
@@ -245,9 +254,19 @@ conda config --show
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-orgc0a5ce8" class="outline-3">
+<h3 id="orgc0a5ce8"><span class="section-number-3">6.2</span> 从github安装pyshark</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+参看<a href="https://docs.qq.com/doc/BBl3iP0LW0yM0O5N9V4N0AFj0IXh411RunKS3v2QxQ2noYKK0KzroD4yU9IH1ApZHP4WXddb2">这篇教程</a>。</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<div>版权所有 (c) 2018 (贵州理工学院 大数据学院 张森)</div><div>电子邮件: 20120061 # git dot edu dot cn</div><div>更新时间: 2018-08-27</div>
+<div>版权所有 (c) 2018 (贵州理工学院 大数据学院 张森)</div><div>电子邮件: 20120061 # git dot edu dot cn</div><div>更新时间: 2018-08-30</div>
 </div>
 </body>
 </html>
