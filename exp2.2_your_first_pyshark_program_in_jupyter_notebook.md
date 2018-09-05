@@ -39,8 +39,7 @@ cap = pyshark.FileCapture("d:/http-ethereal-trace-1", display_filter='http')
 
 print(cap[0])
 ```
-
-如果你看到类似如下输出：
+输入完毕之后，按住ctrl键，然后按下Enter键并放开，如果你看到类似如下输出：
 ```
 Packet (Length: 698)
 Layer ETH:
