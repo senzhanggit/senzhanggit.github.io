@@ -36,7 +36,7 @@ cd /d/src
 c\. 从github.com克隆（检出）代码
 
 ``` shell
-git clone <https://github.com/md11235/pyshark.git>
+git clone https://github.com/md11235/pyshark.git
 ```
 
 3、安装从github拿到的代码
