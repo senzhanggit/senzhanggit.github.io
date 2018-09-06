@@ -4,11 +4,11 @@
 
 如果原本安装过pyshark，先卸载它。否则跳过。
 
-1.  运行anaconda prompt
+1\.  运行anaconda prompt
 
 ![](images/media/document_image_rId9.png)
 
-2.  先卸载以后pyshark
+2\.  先卸载以后pyshark
 
 ``` shell
 pip uninstall pyshark
@@ -41,12 +41,12 @@ git clone <https://github.com/md11235/pyshark.git>
 
 3、安装从github拿到的代码
 
-1.  运行anaconda prompt
+1\.  运行anaconda prompt
 
 ![](images/media/document_image_rId9.png)
 
 
-2.  从检出的源代码安装pyshark
+2\.  从检出的源代码安装pyshark
 
 用如下命令切换到 d:\\src ：
 
