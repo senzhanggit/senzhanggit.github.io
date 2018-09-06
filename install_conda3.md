@@ -6,7 +6,7 @@ Anaconda本身分为 Anaconda 2和Anaconda 3 系列，分别提供对 python 2.x
 ## 下载 Anaconda3
 
 从 <https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/>下载
-Miniconda3。依据你的操作系统是64位还是32位的Windows，下载对应的版本。
+Anaconda 3。依据你的操作系统是64位还是32位的Windows，下载对应的版本。
 如果操作系统是64位的Windows，下载
 <https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-5.2.0-Windows-x86.exe>
 ；如果操作系统是32位的Windows，下载
