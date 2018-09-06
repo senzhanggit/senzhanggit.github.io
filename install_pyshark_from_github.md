@@ -48,11 +48,11 @@ git clone <https://github.com/md11235/pyshark.git>
 
 2.  从检出的源代码安装pyshark
 
-用如下命令切换到d:\\src ：
+用如下命令切换到 d:\\src ：
 
 ``` shell
 d:
-cd d:\\src
+cd d:\src
 ```
 
 然后运行
