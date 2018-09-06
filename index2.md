@@ -2,7 +2,7 @@
 
 ## 实验2
 
-  * [2.1 安装Anaconda3或者Miniconda3](exp1_install_conda3.html)
+  * [2.1 安装Anaconda3或者Miniconda3](install_conda3.md)
   * [2.2 从github安装pyshark](install_pyshark_from_github.md)
   * [2.3 开启Jupyter Notebook并写代码](exp2.2_your_first_pyshark_program_in_jupyter_notebook.md)
 
