@@ -8,7 +8,7 @@
 
 ![](images/media/document_image_rId9.png)
 
-## 先卸载以后pyshark
+## 先卸载已安装的pyshark
 
 ``` shell
 pip uninstall pyshark
