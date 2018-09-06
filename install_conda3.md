@@ -64,6 +64,7 @@ conda config --show # 看看当前的 config 是什么样的
 ``` python
 conda config --remove channels 'https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/' 
 ```
+
 ## 更新pip
 
 
@@ -101,7 +102,7 @@ pip install jupyter
 
 ### 安装pyshark
 
-请看下一篇教程。
+请看[下一篇教程](install_pyshark_from_github.md)。
 
 **版权所有 (c) 2018 (贵州理工学院 大数据学院 张森)**
 

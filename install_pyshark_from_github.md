@@ -5,8 +5,7 @@
 根据https://www.jianshu.com/p/122f5bf8749e
 的方法，照着做完，看到类似如下的界面：
 
-![](images/media/document_image_rId7.png){width="5.768055555555556in"
-height="3.6452712160979877in"}
+![](images/media/document_image_rId7.png)
 
 2、检出代码
 
@@ -24,15 +23,13 @@ git clone <https://github.com/md11235/pyshark.git>
 
 1.  运行anaconda prompt
 
-![](images/media/document_image_rId9.png){width="3.9270833333333335in"
-height="6.59375in"}
+![](images/media/document_image_rId9.png)
 
 2.  如果之前安装过pyshark，先卸载
 
 pip uninstall pyshark
 
-![](images/media/document_image_rId10.png){width="5.768055555555556in"
-height="2.977626859142607in"}
+![](images/media/document_image_rId10.png)
 
 3.  从检出的源代码安装pyshark
 
@@ -44,5 +41,4 @@ cd d:\\src
 
 然后运行 python setup.py install
 
-![](images/media/document_image_rId11.png){width="5.768055555555556in"
-height="3.047825896762905in"}
+![](images/media/document_image_rId11.png)
