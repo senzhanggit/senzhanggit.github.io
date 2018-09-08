@@ -1,4 +1,6 @@
-# 运行Jupyter Notebook
+# 在Jupyter Notebook里写代码
+
+## 运行Jupyter Notebook
 
 如果是用Anaconda安装的，那么很简单，在开始菜单里找到Anaconda 3菜单项并展开，然后点击Jupyter Notebook即可。
 
@@ -28,7 +30,7 @@ Python 3
 点击这个条目，此时才会打开一个notebook，里面默认有了一个单元格，此时才可以开始下一步，往里面写代码。
 
 
-# 开始写你的代码
+## 开始写你的代码
 
 在前面安装配置正确的情况下，终于，我们来到了这里。先下载一个已经用wireshark抓好的数据包， [http-ethereal-trace-1](wireshark-traces/http-ethereal-trace-1)，然后放到比如D盘下，那么这个文件在后续编程时，引用（找到）它的路径是`d:/http-ethereal-trace-1`。
 
@@ -64,6 +66,6 @@ Layer IP:
 
 那么恭喜你，你基本完成了第一个pyshark程序。
 
-# 更多参考资料
+## 更多参考资料
 
 [Pyshark作者写的教程页面](https://kiminewt.github.io/pyshark/)

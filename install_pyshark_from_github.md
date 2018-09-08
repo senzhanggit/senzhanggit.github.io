@@ -1,4 +1,6 @@
-在windows上从github检出python 模块pyshark的代码并安装
+# 安装pyshark
+
+这里需要在windows上从github检出python模块pyshark的代码并安装。pyshark原作者的代码在20180901前用于jupyter notebook时会因为eventloop有点问题。
 
 # 卸载已有的pyshark
 

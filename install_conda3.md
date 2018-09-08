@@ -1,3 +1,5 @@
+# 下载、安装和配置Anaconda（并Jupyter）
+
 Anaconda本身分为 Anaconda 2和Anaconda 3 系列，分别提供对 python 2.x 语
 言 和 python 3.x语言的支持。本门课使用 Anaconda 3（Miniconda 3）以及相
 关的工具库进行网络数据包分析工具。另外，Miniconda 是 Anaconda 的精简发
