@@ -2,6 +2,9 @@
 
 用于2018年秋季学期。
 
+## 实验1
+  * [1.1 强烈推荐安装英文版Firefox](exp1.1_install_english_version_firefox.md)
+
 ## 实验2
 
   * [2.1 安装Anaconda3或者Miniconda3](install_conda3.md)
