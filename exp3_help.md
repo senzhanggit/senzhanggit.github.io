@@ -2,7 +2,9 @@
 
 ## WiFi 网络连接
 
-WiFi SSID: network_lab，password: 88888888 。 设备太多，未必能连上。可以考虑在教师机上用usb盘拷贝。
+后续的 <http://192.168.92.100> 网站需要连上这个WiFi才能使用：
+
+`WiFi SSID: network_lab，password: 88888888` 。 设备太多，未必能连上。可以考虑在教师机上用usb盘拷贝。
 
 ## 软件下载
 
