@@ -7,9 +7,12 @@ WiFi SSID: network_lab
 password: 88888888
 
 ## 软件下载
+
 <http://192.168.92.100/>
 
-其中包含 第三次实验样本网络数据包： <http://192.168.92.100/wireshark-traces.zip> 。 提交作业时不能用这个包哈，需要提交你们小组用wireshark抓的包文件。
+强烈建议从上述站点安装Firefox浏览器。
+
+该站点还提供 第三次实验样本网络数据包： <http://192.168.92.100/wireshark-traces.zip> 。 提交作业时不能用这个包哈，需要提交你们小组用wireshark抓的包文件。
 
 ## 供还未配置好编程环境的同学
 
@@ -22,4 +25,4 @@ password: 88888888
 
 `d:\Anaconda3\Scriptsjupyter-notebook.exe`
 
-然后按下 回车 键，即可运行出juputer notebook。
+然后按下 回车 键，即可运行出juputer notebook。这个压缩包解压缩之后的环境里已经包含了pyshark，所以可以直接在jupyter notebook里调用pyshark写实验课要求的代码了。
