@@ -2,9 +2,7 @@
 
 ## WiFi 网络连接
 
-WiFi SSID: network_lab
-
-password: 88888888
+WiFi SSID: network_lab，password: 88888888 。 设备太多，未必能连上。可以考虑在教师机上用usb盘拷贝。
 
 ## 软件下载
 
