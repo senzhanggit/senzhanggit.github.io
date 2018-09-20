@@ -18,8 +18,6 @@ http://192.168.92.100/
 
 然后输入
 
-`d:\Anaconda3\Scriptsjupyter-notebook.exe 回车`
+`d:\Anaconda3\Scriptsjupyter-notebook.exe`
 
-即可运行出juputer notebook
-
-
+然后按下 回车 键，即可运行出juputer notebook。
