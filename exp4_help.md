@@ -16,7 +16,7 @@
 
 ```
 class16X-captainYYY-expZ
-|___class16X-groupY-expZ.ipynb
+|___class16X-groupYYY-expZ.ipynb
 |___data-captured-exp4-1.pcapng
 |___data-captured-exp4-2.pcapng
 |___data-captured-exp4-4.pcapng
