@@ -22,5 +22,6 @@ class16X-captainYYY-expZ
 |___data-captured-exp4-4.pcapng
 
 ```
-
+**其中的.ipynb文件只能有一个**
+**其中的数据文件可以有一个或者多个**
 **请将上述的X、YYY、Z变量替换为你们组的具体参数。**
