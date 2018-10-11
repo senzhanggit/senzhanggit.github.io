@@ -10,7 +10,7 @@
 
 提交的资料包含两个文件：
    1. **计算机网络-实验报告-第Z次-16X班-队长YYY.docx**
-   2. **class16X-captainYYY-expZ.zip**
+   2. **class16X-groupYYY-expZ.zip**
 
 其中zip文件直接解压缩以后必须出现名为“class16X-groupYYY-expZ”的目录。其中包含一个名为“class16X-groupYYY-expZ.ipynb”的文件，
 其中记录jupyter notebook程序；该程序用到的数据文件也必须位于目录”class16X-groupYYY-expZ”下里，并且在ipynb里引用数据文
